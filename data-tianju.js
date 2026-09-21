@@ -120,7 +120,7 @@ const tianjuExams = [
         }
     },
 
-    // ========== 5. 2015年10月 ==========
+      // ========== 5. 2015年10月 ==========
     {
         id: '2015-10',
         session: '2015年10月',
@@ -128,7 +128,7 @@ const tianjuExams = [
         passage: [
             'Have you ever heard of the princess disease? It is a terrible disease. [26] It wastes away at one\'s social life and people\'s tolerance. People with this disease think they are better than everyone else, without a real reason.',
             'Jin is a girl who suffers from this disease. [27] She thinks she is better looking than her friends and most people she has met. It is, as far as she is concerned, a well-known fact that she dresses better, sings better, and dances better than most people in her school, too.',
-            'So is Jin justified in believing that she is better than everyone else? [28] Of course, she thinks this is because the singing coach hates her, since the coach has bad skin and is jealous of her. She is good at sports, but she isn\'t the strongest, fastest, or even the best at any of their school\'s events. [29] She, again thinks it was because of the "haters". After losing, she pretended she\'d just run for fun and it was no big deal, but in fact it was a huge deal to her.',
+            'So is Jin justified in believing that she is better than everyone else? [28] Of course, she thinks this is because the singing coach hates her, since the coach has bad skin and is jealous of her. She is good at sports, but she isn\'t the strongest, fastest, or even the best at any of their school\'s events. [29] She, again thinks it was because of the haters. After losing, she pretended she\'d just run for fun and it was no big deal, but in fact it was a huge deal to her.',
             'Jin definitely has the disease. The treatment is to stop being so mean and get a little modesty. [30] She might even get rid of this disease if she tries hard enough.'
         ],
         options: [
@@ -144,7 +144,7 @@ const tianjuExams = [
             '26': '空格前说"It is a terrible disease"，空格后说"It wastes away at one\'s social life and people\'s tolerance"。选项E "It threatens to push one\'s friends away" 中的"It"指代"princess disease"，"push one\'s friends away"与后文"wastes away at one\'s social life"直接呼应。',
             '27': '空格前说"Jin is a girl who suffers from this disease"，空格后说"She thinks she is better looking than her friends"。选项A "She is too proud of herself" 概括了Jin的症状，与后文"thinks she is better"呼应。',
             '28': '空格前说"So is Jin justified in believing that she is better than everyone else?"，空格后说"Of course, she thinks this is because the singing coach hates her"。选项D "She sings well, but not well enough to be a lead singer" 举例说明Jin的实际水平，与后文关于唱歌教练的讨论衔接。',
-            '29': '空格前说"She is good at sports, but she isn\'t the strongest, fastest, or even the best"，空格后说"She, again thinks it was because of the 'haters'"。选项F "She ran for class president, but came in third" 具体举例说明她的失败，与后文她归咎于"haters"呼应。',
+            '29': '空格前说"She is good at sports, but she isn\'t the strongest, fastest, or even the best"，空格后说"She, again thinks it was because of the haters"。选项F "She ran for class president, but came in third" 具体举例说明她的失败，与后文她归咎于"haters"呼应。',
             '30': '空格前说"The treatment is to stop being so mean and get a little modesty"，空格后说"She might even get rid of this disease if she tries hard enough"。选项C "Then things might become better for her" 中的"Then"承接前文的治疗建议，"things might become better"与"get rid of this disease"呼应。'
         }
     },
