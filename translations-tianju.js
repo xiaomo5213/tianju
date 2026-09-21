@@ -178,7 +178,7 @@ const translationsTianju = {
         'The power of positive thinking lies beyond false courage.': '积极思考的力量超越虚假的勇气。',
         'You need to take another look at the world around you.': '你需要重新审视你周围的世界。',
         'You can\'t rest on your success, or foolish pride will cause you to make wrong decisions.': '你不能满足于成功，否则愚蠢的骄傲会导致你做出错误的决定。'
-    }
+    },
 
         // ========== 9. 2017年10月 · My Major Problem ==========
     '2017-10': {
@@ -323,7 +323,7 @@ const translationsTianju = {
         'If I haven\'t prepared, I lose track of the details I intended to share.': '如果我没有准备，我就会忘记我想要分享的细节。',
         'When the doctor asks you questions, you can be more specific, and the diagnosis and treatment will be more accurate.': '当医生问你问题时，你可以更具体，诊断和治疗也会更准确。',
         'And there may be a few minutes left over for a little pleasant conversation!': '可能还会剩下几分钟进行愉快的交谈！'
-    }
+    },
 
         // ========== 15. 2020年10月 · Lack of Sleep Is Dangerous ==========
     '2020-10': {
@@ -494,20 +494,111 @@ const translationsTianju = {
         'They can use computers to make new images.': '他们可以用计算机来制作新的图像。',
         'Many images in Titanic, including crowds of people on the ship, were actually made by computer.': '《泰坦尼克号》中的许多图像，包括船上的人群，实际上是由计算机生成的。',
         'In some other films, computers were used to make the actors look as if they were fighting while floating in the air.': '在其他一些电影中，计算机被用来使演员看起来像是在空中漂浮着打斗。'
-    }
+    },
 
- .sentence-block { margin-bottom: 10px; }
-.sentence-block:last-child { margin-bottom: 0; }
-.sentence-line {
-    font-weight: 500;
-    color: #0a1f2e;
-    line-height: 1.8;
-}
-.trans-text {
-    color: #2d4f7c;
-    font-size: 0.92rem;
-    margin-top: 4px;
-    padding-left: 12px;
-    border-left: 3px solid #b8cce4;
-    font-style: normal;
-}
+     // ========== 22. 2024年4月 · What Does Happiness Mean? ==========
+    '2024-04': {
+        'Happiness in life differs for all of us.': '生活中的幸福对我们所有人来说都是不同的。',
+        'Very often we are happy, but we just don\'t realize it.': '很多时候我们是幸福的，只是我们没有意识到。',
+        'If you think about what actually makes you happy, you might find you have those things already around you.': '如果你想想真正让你快乐的是什么，你可能会发现那些东西已经在你身边了。',
+        'The first step for you to do so is to look at your feelings and ask yourself questions such as "if I could be enjoying something in my life, what would it be?" and "what makes me feel satisfied in my life right now?"': '你这样做的第一步是审视自己的感受，并问自己这样的问题："如果我能享受生活中的某件事，那会是什么？"以及"现在是什么让我感到满足？"',
+        'Once you understand what your idea of happiness is, you can build on what you have now or focus on changing your life to what you would like it to be.': '一旦你理解了幸福对你意味着什么，你就可以在现有基础上发展，或者专注于将生活改变为你想要的样子。',
+        'The important thing to do is to examine your feelings by way of the answers you give to your questions.': '重要的是通过你给问题的答案来审视你的感受。',
+        'You should also focus on the good or bad feelings you get from your questions and answers.': '你还应该关注你从问题和答案中得到的好或坏的感觉。',
+        'Happiness is something that is already right there inside you.': '幸福是已经存在于你内心的东西。',
+        'You just have to realize what it is and bring it out to start enjoying life.': '你只需要意识到它是什么，并把它带出来，开始享受生活。',
+        'It can be found in family life, work, relationships, nature or a pet, to name just a few.': '它可以在家庭生活、工作、人际关系、自然或宠物中找到，仅举几例。',
+        'The point is where to look.': '关键是去哪里找。',
+        'You should look in the right direction, that is, your inner self.': '你应该朝着正确的方向看，那就是你的内在自我。'
+    },
+
+    // ========== 23. 2024年10月 · Enjoy Yourself and Improve Your English ==========
+    '2024-10': {
+        'One student I knew in Tanzania was the daughter of a school teacher.': '我在坦桑尼亚认识的一个学生是一位教师的女儿。',
+        'On the first day of the long school holidays, a whole set of graded English books arrived at her house.': '在漫长的学校假期的第一天，一整套分级英语书籍送到了她家。',
+        'The daughter read them all, starting from the easiest and working up to the most difficult.': '这个女儿把它们全部读了，从最简单的开始，一直到最难的。',
+        'The holidays passed quickly and when the new school term started, she was far ahead of her classmates in English.': '假期很快过去了，当新学期开始时，她的英语远远领先于她的同学。',
+        'I think there are three.': '我认为有三点。',
+        'First, learning a new language takes time and practice.': '首先，学习一门新语言需要时间和练习。',
+        'It is the same with any skill, like swimming.': '任何技能都是如此，比如游泳。',
+        'There are no quicker ways.': '没有更快的方法。',
+        'Second, successful learning means moving from the easy to the difficult.': '第二，成功的学习意味着从易到难。',
+        'You have to play very simple tunes before you move on, step by step, to more complex ones.': '你必须先演奏非常简单的曲子，然后一步一步地转向更复杂的曲子。',
+        'The student was not trying to improve her English, though her English did improve.': '这个学生并没有想提高英语，尽管她的英语确实提高了。',
+        'She liked the stories and was using them to pass the time.': '她喜欢这些故事，并用它们来消磨时间。',
+        'She became better at English without knowing it.': '她在不知不觉中英语变得更好了。',
+        'Her brain was learning the language while she was concentrating on the stories.': '当她专注于故事时，她的大脑在学习这门语言。',
+        'However, many students give two main reasons for not reading much.': '然而，许多学生给出了不大量阅读的两个主要理由。',
+        'I am afraid this reason is very weak and simply not true.': '恐怕这个理由很弱，根本不是真的。',
+        'The other reason is that they do not enjoy it.': '另一个理由是他们对阅读不感兴趣。',
+        'This reason is stronger.': '这个理由更充分。',
+        'In fact it can be divided into two.': '事实上，它可以分为两种。',
+        'You may not enjoy reading because either the language is difficult, or the stories are boring.': '你可能不喜欢阅读，要么是因为语言难，要么是因为故事无聊。'
+    },
+
+    // ========== 24. 2025年4月 · Work is a Blessing ==========
+    '2025-04': {
+        'I grew up in Lakeland, LA, one of 12 children.': '我在路易斯安那州的莱克兰长大，是12个孩子中的一个。',
+        'We all lived on my parents\' farm.': '我们都住在我父母的农场里。',
+        'We grew cotton, corn and had a large garden, but it didn\'t bring in much cash.': '我们种棉花、玉米，还有一个大花园，但没有带来多少现金。',
+        'We milked 65 cows at 5 in the morning and again at 2 in the afternoon, seven days a week.': '我们早上5点和下午2点各挤65头牛的奶，一周七天。',
+        'One Saturday before daylight, I remember complaining to my father and grandfather about having to milk those cows.': '我记得有一个星期六天还没亮，我向父亲和祖父抱怨不得不挤那些牛的奶。',
+        'My father said, "You know, boy, to work is a blessing."': '我父亲说："你知道吗，孩子，工作是一种祝福。"',
+        'However, it took many years before it sank in.': '然而，很多年之后我才真正领会。',
+        'Going to college was a rare privilege for a kid from Lakeland.': '对莱克兰的孩子来说，上大学是一种难得的特权。',
+        'So I joined the ROTC program to help pay for college.': '所以我加入了ROTC项目来帮助支付大学费用。',
+        'And what started out as an obligation to the Army became a way of life that I stayed committed to for 37 years, three months and three days.': '而最初对军队的义务变成了一种生活方式，我坚持了37年3个月零3天。',
+        'In the late 1980s, during a visit to Bangladesh, I saw a woman with a baby on her back, breaking bricks with a hammer.': '在20世纪80年代末，在访问孟加拉国期间，我看到一位妇女背着婴儿，用锤子敲碎砖块。',
+        'I asked a Bangladesh military officer why they weren\'t using a machine, which would have been a lot easier.': '我问一位孟加拉国军官为什么不用机器，那样会容易得多。',
+        'Breaking those bricks meant she could earn enough money to feed herself and her baby that day.': '敲碎那些砖意味着她那天能挣到足够的钱来养活自己和她的孩子。',
+        'And as bad as that woman\'s job was, it was enough to keep a small family alive.': '尽管那位女士的工作如此糟糕，它却足以维持一个小家庭的生计。'
+    },
+
+    // ========== 25. 2025年10月 · What is Green Tourism? ==========
+    '2025-10': {
+        'The aim of green tourism is to protect the environment and culture of an area.': '绿色旅游的目的是保护一个地区的环境和文化。',
+        'There are many choices for green tourism worldwide.': '全世界有许多绿色旅游的选择。',
+        'The number of tourists has been increasing these days.': '如今游客数量一直在增加。',
+        'It makes green tourism a must in some areas.': '这使得绿色旅游在一些地区成为必需。',
+        'In order to protect the environment, it might seem wiser to ban tourists to these areas.': '为了保护环境，禁止游客进入这些地区似乎更明智。',
+        'But many areas need the income from tourism for their local economy.': '但许多地区需要旅游收入来支撑当地经济。',
+        'Green tourism offers the best solution to both.': '绿色旅游为两者提供了最佳解决方案。',
+        'At the same time, it keeps local businesses growing.': '同时，它保持当地企业增长。',
+        'Green tourism might not mean a vacation spent with little or no comfort.': '绿色旅游可能并不意味着度过一个几乎没有舒适度的假期。',
+        'Green tourism resorts exist in almost every style and taste.': '几乎每一种风格和品味都有绿色旅游度假村。',
+        'From recycling systems to tree houses, there are many vacation choices.': '从回收系统到树屋，有许多度假选择。',
+        'On a green holiday, people study the local plants and culture.': '在绿色假期中，人们学习当地的植物和文化。',
+        'Guides, tours and wildlife-viewing platforms help people experience a lot.': '导游、旅行和野生动物观赏平台帮助人们体验很多。',
+        'But little or no impact is made on the environment.': '但对环境几乎没有影响。',
+        'Sometimes, tourists can take an active part in improving the local area.': '有时，游客可以积极参与改善当地地区。',
+        'They can work to protect the wildlife in the area.': '他们可以努力保护该地区的野生动物。',
+        'They can help to build a school.': '他们可以帮助建一所学校。',
+        'These vacations can be a lot of work.': '这些假期可能有很多工作。',
+        'But people find them very rewarding and interesting.': '但人们发现它们非常有意义和有趣。',
+        'Nowadays, green tourism is becoming more popular.': '如今，绿色旅游正变得越来越受欢迎。',
+        'More areas will take steps to have less of an impact on the environment, allowing tourists to enjoy the beauty that these areas have to offer for many years to come.': '更多地区将采取措施减少对环境的影响，让游客在未来许多年里享受这些地区提供的美景。'
+    },
+
+    // ========== 26. 2026年4月 · Bird Maps and Compasses (罗盘) ==========
+    '2026-04': {
+        'Every year hundreds of species of birds take long trips.': '每年数百种鸟类进行长途旅行。',
+        'In the fall, they fly to warmer climates where food is plentiful all winter.': '在秋天，它们飞往气候更温暖的地方，那里整个冬天食物都很丰富。',
+        'When spring comes, they fly back to raise their young where they were born.': '当春天来临时，它们飞回出生地抚育幼鸟。',
+        'For a long time people wondered where the birds went and what routes they took.': '很长一段时间以来，人们想知道这些鸟去了哪里，走了什么路线。',
+        'Researchers now know that migrating birds are guided by their own sorts of maps and compasses.': '研究人员现在知道，迁徙的鸟类由它们自己的地图和罗盘引导。',
+        'But it has taken many decades to uncover the secrets of these navigation (导航) tools.': '但揭开这些导航工具的秘密花了几十年时间。',
+        'In the 1800s, scientists started putting bands around birds\' legs.': '19世纪，科学家开始给鸟腿戴上环带。',
+        'When people found the banded birds, they contacted the person named on the band and told him where and when they had found the bird.': '当人们发现戴环带的鸟时，他们联系环带上写名字的人，告诉他他们在哪里、何时发现了这只鸟。',
+        'In this simple way, scientists learned a lot about where birds traveled, where they stopped, and how fast they moved.': '用这种简单的方式，科学家了解了很多关于鸟类旅行路线、停留地点和移动速度的信息。',
+        'Today scientists still put bands on birds\' legs.': '今天科学家仍然给鸟腿戴上环带。',
+        'They also use new ways of tracking birds such as airplanes, computers, and satellites.': '他们还使用飞机、计算机和卫星等新方法追踪鸟类。',
+        'Birds often migrate in groups.': '鸟类经常成群迁徙。',
+        'You may have seen Canada geese flying high in the sky in a V-form.': '你可能见过加拿大鹅在天空中排成V字形高飞。',
+        'Young birds follow their parents.': '幼鸟跟随父母。',
+        'They may follow a river and remember what it looks like.': '它们可能沿着一条河飞行并记住它的样子。',
+        'Also, birds use the position of the sun and stars as a compass to find their way.': '此外，鸟类利用太阳和星星的位置作为罗盘来寻找方向。',
+        'Chemicals in their brains allow them to sense the magnetic field and travel in the right direction.': '它们大脑中的化学物质使它们能感知磁场并朝着正确的方向飞行。',
+        'But scientists are still researching how this happens.': '但科学家仍在研究这是如何发生的。',
+        'They think some birds may actually be able to see the earth\'s magnetic field.': '他们认为有些鸟可能真的能看到地球的磁场。'
+    }
+};

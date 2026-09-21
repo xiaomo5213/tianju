@@ -775,5 +775,5 @@ const tianjuExams = [
             '29': '空格前说"Young birds follow their parents"（幼鸟跟随父母），空格后说"They may follow a river and remember what it looks like"（它们可能沿着一条河飞行并记住它的样子）。选项E "They learn the route that the older geese have traveled before"（它们学习年长的鹅以前旅行过的路线）中的"They"指代"Young birds"，"learn the route"与"follow their parents"呼应，"older geese"与后文"follow a river"形成具体说明。',
             '30': '空格后说"Chemicals in their brains allow them to sense the magnetic field and travel in the right direction"（它们大脑中的化学物质使它们能感知磁场并朝着正确的方向飞行）。选项B "Birds use the earth\'s magnetic field to navigate too"（鸟类也使用地球磁场导航）中的"too"承接前文提到的多种导航方式，"magnetic field"与后文"sense the magnetic field"直接呼应。'
         }
-    }
+    },
 ];
