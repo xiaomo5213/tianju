@@ -1,0 +1,513 @@
+// translations-tianju.js - 填句补文翻译数据（26个考期）
+// 结构：{ '考期ID': { '英文句子': '中文翻译', ... }, ... }
+// 使用方式：通过 translationsTianju[examId][英文句子] 获取对应中文
+const translationsTianju = {
+
+    // ========== 1. 2013年10月 · Grandpa My Hero ==========
+    '2013-10': {
+        'My grandfather had only one child and that was my mother.': '我的祖父只有一个孩子，那就是我的母亲。',
+        'He always wanted a son but it never happened.': '他一直想要一个儿子，但这个愿望从未实现。',
+        'When my mom got pregnant, he thought he finally had a boy in the family, but it turned out that her first child was my older sister.': '当我妈妈怀孕时，他以为家里终于要有一个男孩了，但结果她的第一个孩子是我的姐姐。',
+        'When I was born, Grandpa was very happy.': '当我出生时，祖父非常高兴。',
+        'He was the first person to give me a baseball glove and to play baseball with me.': '他是第一个给我棒球手套并和我一起打棒球的人。',
+        'My first glove was as small as my whole hand is now.': '我的第一只手套和我现在整只手一样小。',
+        'When Grandpa gave me that glove, I was very excited.': '当祖父给我那只手套时，我非常兴奋。',
+        'It was my pride and joy.': '它是我的骄傲和快乐。',
+        'When I was five, I played on my first baseball team and Grandpa was the coach.': '当我五岁时，我加入了第一支棒球队，祖父是教练。',
+        'He wanted me to play one position, but I wanted to play another.': '他想让我打一个位置，但我想打另一个位置。',
+        'I tried so hard that I made good progress.': '我如此努力，以至于取得了很好的进步。',
+        'Grandpa was very proud of me.': '祖父为我感到非常骄傲。',
+        'Ever since then, he has worked with me to make me a better player.': '从那时起，他就一直和我一起努力，让我成为更好的球员。',
+        'Grandpa has helped me become not only a better player, but a better person.': '祖父不仅帮助我成为更好的球员，还帮助我成为更好的人。',
+        'Today Grandpa does not play baseball with me so often, but he still comes to every practice and game.': '如今祖父不常和我一起打棒球了，但他仍然来参加每一次训练和比赛。',
+        'He sits and watches my practices through rain and shine.': '无论风雨，他都坐着看我的训练。',
+        'I love him and hope he will be around for many more years to support me and baseball.': '我爱他，希望他能再多活很多年，支持我和棒球。'
+    },
+
+    // ========== 2. 2014年4月 · Biological Clock ==========
+    '2014-04': {
+        'When the sun rises on a warm and sunny day, you can see some flowers open up.': '在温暖晴朗的日子里，当太阳升起时，你可以看到一些花朵开放。',
+        'When they close late in the afternoon, other flowers open.': '当它们在傍晚关闭时，其他花朵却开放了。',
+        'Biological rhythms (生物节律), like the opening and closing of flowers, happen all over nature.': '生物节律，比如花朵的开放和关闭，在自然界中随处可见。',
+        'But not all of them are daily rhythms.': '但并非所有的节律都是每日节律。',
+        'Some, like the beating of our heart, happen every second.': '有些节律，比如我们心脏的跳动，每秒钟都在发生。',
+        'Scientists use the term biological clock to describe the timing that controls biological rhythms.': '科学家用"生物钟"这个术语来描述控制生物节律的时序。',
+        'In some animals it is probably controlled by the brain.': '在一些动物中，它可能由大脑控制。',
+        'In plants and other living things that have no brain, it must be something else.': '在植物和其他没有大脑的生物中，它一定是别的东西。',
+        'The migration of animals happens when a signal is sent out.': '动物的迁徙在信号发出时发生。',
+        'For example, when days become shorter, birds leave the northern parts of the world and fly south where it is warm.': '例如，当白昼变短时，鸟类离开世界北部，飞到温暖的南方。',
+        'Humans also have biological clocks that control their daily rhythms.': '人类也有控制日常节律的生物钟。',
+        'When people travel by plane from one continent to another, they often cross many time zones.': '当人们乘飞机从一个大陆到另一个大陆时，他们常常跨越许多时区。',
+        'Their internal clocks don\'t seem to work correctly.': '他们的内部时钟似乎不能正常工作了。',
+        'We call this jet lag (时差).': '我们称之为时差。',
+        'People who work night shifts also have problems with their biological clocks.': '上夜班的人也有生物钟问题。',
+        'They may not be as active as people who work during the daytime.': '他们可能不像白天工作的人那样活跃。',
+        'Biological clocks control many rhythms of life.': '生物钟控制着生命的许多节律。',
+        'Doctors are looking for new ways to make traveling more comfortable and medical treatment more effective.': '医生们正在寻找新方法，使旅行更舒适、医疗更有效。'
+    },
+
+    // ========== 3. 2014年10月 · Fruit ==========
+    '2014-10': {
+        'Imagine a world without fruit.': '想象一个没有水果的世界。',
+        'We wouldn\'t be very healthy.': '我们就不会很健康。',
+        'We get a lot of important vitamins from eating fruit.': '我们从吃水果中获得许多重要的维生素。',
+        'We think of fruit primarily as something to eat.': '我们主要把水果视为吃的东西。',
+        'Fruit is part of a flowering plant and it carries the seeds.': '水果是开花植物的一部分，它携带着种子。',
+        'The purpose of fruit is to protect a plant\'s seeds and help them get spread about.': '水果的目的是保护植物的种子并帮助它们传播。',
+        'Wind and water spread seeds.': '风和水的传播种子。',
+        'So do animals when they eat fruit and drop the seeds.': '动物吃水果并掉下种子时也是如此。',
+        'There are two main types of fruit: fleshy and dry.': '水果主要有两种类型：肉质果和干果。',
+        'Fleshy fruits are soft and juicy.': '肉质果柔软多汁。',
+        'Pears, bananas and apples are all fleshy fruits.': '梨、香蕉和苹果都是肉质果。',
+        'Grains like wheat and rice, or nuts like chestnuts (板栗), are dry fruits.': '像小麦和水稻这样的谷物，或像板栗这样的坚果，都是干果。',
+        'But wait: You\'ve eaten oranges and grapes without seeds.': '但等等：你吃过没有种子的橙子和葡萄。',
+        'How can they be fruits?': '它们怎么可能是水果呢？',
+        'It\'s because people have changed the way they grow fruit.': '这是因为人们改变了种植水果的方式。',
+        'They can now grow seedless fruit.': '他们现在可以种植无籽水果。',
+        'Seedless fruit comes from special plants that are made by combining two varieties of a fruit to form a new variety.': '无籽水果来自特殊植物，这些植物是通过将两种水果品种结合形成新品种而制成的。',
+        'These special plants grow and produce seeds.': '这些特殊植物生长并产生种子。',
+        'These plants cannot reproduce themselves.': '这些植物不能自我繁殖。',
+        'They can make fruit, but the fruit has no seeds.': '它们能结出果实，但果实没有种子。',
+        'Fruits are a source of substances that keep us alive and healthy.': '水果是维持我们生命和健康的物质的来源。',
+        'So people make use of fruits for many foods.': '所以人们把水果用于许多食物。',
+        'We make juices from them.': '我们用它们做果汁。',
+        'We make jams and sweets.': '我们做果酱和甜食。',
+        'Beer comes from grains and wine comes from grapes, and some particular wines are made from apples, peaches, or other fruits.': '啤酒来自谷物，葡萄酒来自葡萄，一些特殊的酒是用苹果、桃子或其他水果酿造的。'
+    },
+
+    // ========== 4. 2015年4月 · Playing Games -- Not Only Fun ==========
+    '2015-04': {
+        'For many people, playing games is a way to have some fun.': '对许多人来说，玩游戏是一种娱乐方式。',
+        'It is a great way to keep your mental health in check.': '这是保持心理健康的好方法。',
+        'Actually, anything that requires you to do some thinking will help you keep your brain healthy.': '事实上，任何需要你思考的事情都能帮助你保持大脑健康。',
+        'You may say that this sounds great but you just don\'t have the time to do it.': '你可能会说这听起来很棒，但你就是没有时间去做。',
+        'If you want to improve your mental health, you will make time for it.': '如果你想改善心理健康，你就会为它腾出时间。',
+        'You can exercise your brain before work and while the rest of your family is still in bed.': '你可以在上班前、家里其他人还在睡觉时锻炼大脑。',
+        'This can greatly change your attitude for the rest of the day.': '这能极大地改变你接下来一天的态度。',
+        'Turn the TV off in the evening and spend some time playing games alone or with a family member.': '晚上关掉电视，花些时间独自或与家人一起玩游戏。',
+        'Try a variety of new games, too.': '也尝试各种新游戏。',
+        'This way, you don\'t get bored playing the same one all the time.': '这样，你就不会因为一直玩同一个游戏而感到无聊。',
+        'Most games offer several different levels.': '大多数游戏提供几个不同的级别。',
+        'To get the most exercise for your brain, start out with the easy stuff.': '为了让大脑得到最多的锻炼，从简单的开始。',
+        'As your level of skill improves, go on to challenge your brain by moving into more advanced levels of the game.': '随着你技能水平的提高，通过进入游戏更高级别来挑战你的大脑。',
+        'Find the games that you really enjoy playing.': '找到你真正喜欢玩的游戏。',
+        'Keeping your brain sharp with such games is really going to pay off for you in many ways.': '用这样的游戏保持大脑敏锐，会在很多方面给你带来回报。',
+        'You will find that you have less stress and that it is easier to make decisions.': '你会发现压力更小，做决定更容易。',
+        'You will also find that your memory is improving.': '你还会发现你的记忆力在提高。'
+    },
+
+    // ========== 5. 2015年10月 · The Princess Disease ==========
+    '2015-10': {
+        'Have you ever heard of the princess disease?': '你听说过公主病吗？',
+        'It is a terrible disease.': '这是一种可怕的疾病。',
+        'It wastes away at one\'s social life and people\'s tolerance.': '它侵蚀一个人的社交生活和人们的容忍度。',
+        'People with this disease think they are better than everyone else, without a real reason.': '患这种病的人认为自己比别人都好，却没有真正的理由。',
+        'Jin is a girl who suffers from this disease.': 'Jin是一个患有这种病的女孩。',
+        'She thinks she is better looking than her friends and most people she has met.': '她认为自己比朋友和大多数见过的人都好看。',
+        'It is, as far as she is concerned, a well-known fact that she dresses better, sings better, and dances better than most people in her school, too.': '在她看来，众所周知，她穿得比学校里大多数人都好，唱得更好，跳得也更好。',
+        'So is Jin justified in believing that she is better than everyone else?': '那么Jin认为自己比别人都优秀是有理由的吗？',
+        'Of course, she thinks this is because the singing coach hates her, since the coach has bad skin and is jealous of her.': '当然，她认为这是因为唱歌教练讨厌她，因为教练皮肤不好，嫉妒她。',
+        'She is good at sports, but she isn\'t the strongest, fastest, or even the best at any of their school\'s events.': '她擅长运动，但她不是最强的、最快的，甚至在学校任何项目中都不是最好的。',
+        'She, again thinks it was because of the "haters".': '她又认为这是因为"黑粉"。',
+        'After losing, she pretended she\'d just run for fun and it was no big deal, but in fact it was a huge deal to her.': '输了之后，她假装只是跑着玩，没什么大不了的，但实际上这对她影响很大。',
+        'Jin definitely has the disease.': 'Jin肯定得了这种病。',
+        'The treatment is to stop being so mean and get a little modesty.': '治疗方法是停止刻薄，变得谦虚一些。',
+        'She might even get rid of this disease if she tries hard enough.': '如果她足够努力，甚至可能摆脱这种病。'
+    },
+
+    // ========== 6. 2016年4月 · Natural Resources ==========
+    '2016-04': {
+        'Throughout history, people have often selected where they want to live based on the natural resources that are available in the area.': '纵观历史，人们常常根据当地可获得的自然资源来选择居住地。',
+        'Some of these resources include water, food sources such as fruits and vegetables, and animals that can be caught or hunted.': '这些资源包括水、食物来源如水果和蔬菜，以及可以捕获或猎杀的动物。',
+        'A region\'s natural resources determine the way of life of its people.': '一个地区的自然资源决定了其人民的生活方式。',
+        'On the other hand, poor soil will either send people looking for better places, or attract people with other purposes for the land, such as setting up business or factories.': '另一方面，贫瘠的土壤要么促使人们寻找更好的地方，要么吸引人们以其他目的使用土地，比如建立商业或工厂。',
+        'People who wish to make a living as fishermen can do so by the ocean, but cannot do so in the desert.': '希望以捕鱼为生的人可以在海边这样做，但在沙漠中则不行。',
+        'Desert people have many traditional and unique foods, which cannot be found in the forest.': '沙漠地区的人们有许多传统而独特的食物，这些在森林中是找不到的。',
+        'Each area attracts people based on their interests and purposes.': '每个地区都根据自己的兴趣和目的吸引人们。',
+        'Areas that have rich water resources will naturally have more people.': '水资源丰富的地区自然会有更多的人。',
+        'Traditionally, villages, towns and cities built near water have been the most successful.': '传统上，建在水边的村庄、城镇和城市是最成功的。',
+        'People there are able to use the water resources to meet their daily needs.': '那里的人们能够利用水资源来满足日常需求。',
+        'Places that are hard to reach, such as high mountains or dry deserts, will have fewer people living in them.': '难以到达的地方，如高山或干旱的沙漠，居住的人会更少。',
+        'For too long, people have destroyed natural resources, using up those resources that cannot be easily replaced.': '长期以来，人们一直在破坏自然资源，耗尽那些不易被替代的资源。',
+        'On the earth, we are lucky to have many resources that are renewable, such as sun, wind, water, and trees.': '在地球上，我们很幸运拥有许多可再生资源，如太阳、风、水和树木。',
+        'As more and more focus is placed on the use of renewable resources, it will become easier to protect our planet from further harm.': '随着越来越多的关注被放在可再生资源的使用上，保护我们的星球免受进一步伤害将变得更容易。'
+    },
+
+    // ========== 7. 2016年10月 · Remaining Active ==========
+    '2016-10': {
+        'Our body is an amazing object.': '我们的身体是一个奇妙的物体。',
+        'If you are inactive most of the time, your body will quickly become tired when it should be active.': '如果你大部分时间不活动，你的身体在该活跃时会很快疲倦。',
+        'But if you are very active, your body will get used to the hard work, and the work will become easier for you to do.': '但如果你非常活跃，你的身体会习惯辛苦的工作，工作对你来说会变得更容易。',
+        'Physical activity can help people remain active and stay healthy.': '体育活动可以帮助人们保持活跃和健康。',
+        'It also helps people sleep better.': '它还有助于人们睡得更好。',
+        'This is why active students don\'t complain about being tired.': '这就是为什么活跃的学生不会抱怨累。',
+        'They have a good night\'s sleep and have the energy to study hard and have fun every day.': '他们晚上睡得好，有精力努力学习，每天也能玩得开心。',
+        'Physical activity also makes people look and feel good.': '体育活动也让人看起来和感觉都很好。',
+        'Activity burns more calories (卡路里) than just sitting.': '活动比坐着燃烧更多卡路里。',
+        'In addition, regular exercise can make your muscles and bones stronger.': '此外，定期锻炼可以让你的肌肉和骨骼更强壮。',
+        'There are many factors to look at when you select a new physical activity.': '当你选择一项新的体育活动时，有很多因素需要考虑。',
+        'The most important is to choose something you enjoy.': '最重要的是选择你喜欢的活动。',
+        'If you like jumping rope, that is the activity you should do.': '如果你喜欢跳绳，那就是你应该做的活动。',
+        'In fact, two days of basketball, three days of swimming, and two days of bicycling can be more fun than jogging every day.': '事实上，两天篮球、三天游泳和两天骑自行车可能比每天慢跑更有趣。',
+        'Some skills will improve with practice while others may always be difficult for you.': '有些技能会随着练习而提高，而其他技能可能对你来说总是很难。',
+        'If you enjoy an activity, feel free to do it.': '如果你喜欢一项活动，就尽情去做。',
+        'No one cares whether you can do it well or not, and you don\'t need to care about it either.': '没人在乎你做得好不好，你也不需要在意。',
+        'Whatever activity you choose, remain active.': '无论你选择什么活动，保持活跃。',
+        'It can make you physically fit and healthy for life.': '它可以让你终生身体健康。'
+    },
+
+    // ========== 8. 2017年4月 · The Power of Positive Thinking ==========
+    '2017-04': {
+        'Human emotion is one of those factors that cannot be defined exactly.': '人类情感是那些无法精确定义的因素之一。',
+        'The reason is that it is quite uncertain.': '原因是它相当不确定。',
+        'We cannot change the feelings that are roused when we experience different things.': '我们无法改变在经历不同事物时被激起的感受。',
+        'Some people forget that they are in control.': '有些人忘记了他们才是掌控者。',
+        'They make their choices based on their emotions.': '他们基于情绪做出选择。',
+        'They experience failure and loss and let their emotions rule their decisions.': '他们经历失败和损失，让情绪支配他们的决定。',
+        'They are trapped in their sadness and thus, experience more failure.': '他们被困在悲伤中，因此经历更多失败。',
+        'Some people say they need a lucky break to recover from their failures.': '有些人说他们需要一次幸运的机会来从失败中恢复。',
+        'They need to get over their failures on their own.': '他们需要靠自己克服失败。',
+        'But how do they do that?': '但他们怎么做呢？',
+        'The answer is: positive thinking.': '答案是：积极思考。',
+        'People often fail to realize the power of positive thinking.': '人们常常没有意识到积极思考的力量。',
+        'They fail to realize that they only need to overcome their fears in order to truly succeed in life.': '他们没有意识到，他们只需要克服恐惧就能在生活中真正成功。',
+        'They just have too much pride and are blinded of their own shortcomings.': '他们只是太骄傲，被自己的缺点蒙蔽了双眼。',
+        'The power of positive thinking lies in belief.': '积极思考的力量在于信念。',
+        'You make the decisions that affect your life.': '你做出影响你生活的决定。',
+        'You may not be able to change your environment, but you are able to change the way you react to it.': '你可能无法改变环境，但你能够改变你对环境的反应方式。',
+        'The power of positive thinking lies beyond false courage.': '积极思考的力量超越虚假的勇气。',
+        'You need to take another look at the world around you.': '你需要重新审视你周围的世界。',
+        'You can\'t rest on your success, or foolish pride will cause you to make wrong decisions.': '你不能满足于成功，否则愚蠢的骄傲会导致你做出错误的决定。'
+    }
+
+        // ========== 9. 2017年10月 · My Major Problem ==========
+    '2017-10': {
+        'Decision-making is something I struggle with.': '做决定是我一直在挣扎的事情。',
+        'In fact, I\'d rather have someone else make decisions for me.': '事实上，我宁愿让别人替我做决定。',
+        'As I sat in a crowded information session (咨询会) at a college last summer, I was again faced with the pressure of making a decision.': '去年夏天，当我坐在一所大学拥挤的咨询会上时，我再次面临做决定的压力。',
+        'He then asked each of us to give our intended major.': '然后他让我们每个人说出自己打算学的专业。',
+        'I looked at my mother with panic.': '我惊慌地看着我的母亲。',
+        '"A major?" I said.': '"专业？"我说。',
+        '"I can\'t even decide what socks to wear to school!"': '"我连上学穿哪双袜子都决定不了！"',
+        'I wanted to say I was undecided.': '我想说我还未决定。',
+        'But as my turn to speak approached, my confidence decreased.': '但当轮到我发言时，我的信心下降了。',
+        'I watched the girl in front of me.': '我看着前面的那个女孩。',
+        'She was searching for some obscure (鲜为人知) major.': '她正在寻找某个冷门专业。',
+        'I realized I couldn\'t just say undecided.': '我意识到我不能只说"还没决定"。',
+        'So, when my turn came, I uneasily said, "I want to major in business."': '所以，当轮到我时，我不自在地说："我想主修商科。"',
+        'I could feel "liar" written all over my face.': '我能感觉到"骗子"两个字写满了我的脸。',
+        'I felt ashamed.': '我感到羞愧。',
+        '"Why couldn\'t I have said that?" I thought.': '"为什么我不能那样说呢？"我想。',
+        'The admissions adviser even said that a lot of people are uncertain.': '招生顾问甚至说很多人都还不确定。',
+        'That is why students have to decide until the end of the second year.': '这就是为什么学生要到第二年年底才必须决定。',
+        'I have no idea what I want to do with my life.': '我不知道我想用我的人生做什么。',
+        'All I know is that I don\'t want to do anything that involves blood.': '我所知道的就是我不想做任何涉及血液的事情。',
+        'This isn\'t really narrowing it down.': '这并没有真正缩小范围。',
+        'I\'ve been told many people start college with one major, and graduate with a degree in something totally different.': '我听说很多人以某个专业开始大学，却以完全不同的专业毕业。',
+        'After my experience at the information session, I\'ve learned not to be afraid of saying I\'m "undecided."': '在咨询会的经历之后，我学会了不怕说"还没决定"。',
+        'I know now that I am not the only one uncertain about future studies.': '我现在知道我不是唯一对未来学习不确定的人。',
+        'I\'m still experiencing a "major" problem.': '我仍在经历一个"专业"问题。'
+    },
+
+    // ========== 10. 2018年4月 · Homeschooling vs School ==========
+    '2018-04': {
+        'Many kids find it hard to concentrate in school.': '许多孩子发现很难在学校集中注意力。',
+        'Classmates, bells, and even cheerful decorations in school can make it hard for some children to concentrate.': '同学、铃声，甚至学校里欢快的装饰都可能让一些孩子难以集中注意力。',
+        'In some schools, conditions are bad for children\'s safety and health.': '在一些学校，条件对孩子的安全和健康不利。',
+        'Homeschooling parents can control their children\'s environment to make sure it is safe and healthy.': '在家上学的父母可以控制孩子的环境以确保其安全健康。',
+        'When students sit in a classroom surrounded by classmates, under the tight control of adults, they find it very hard to function in a normal way.': '当学生坐在教室里被同学包围、在成年人的严格控制下时，他们发现很难正常活动。',
+        'Homeschooling children don\'t have to stay in the school.': '在家上学的孩子不必待在学校。',
+        'They can interact with people in familiar situations, and they feel they can interact with people as adults.': '他们可以在熟悉的情境中与人互动，他们觉得自己可以像成年人一样与人交流。',
+        'School bullying (以强欺弱) is a serious problem.': '校园欺凌是一个严重的问题。',
+        'Although schools are starting to deal with this problem, many kids are still afraid of going to school.': '尽管学校开始处理这个问题，许多孩子仍然害怕上学。',
+        'Homeschooling kids can choose who they associate with and walk away from an uncomfortable situation.': '在家上学的孩子可以选择和谁交往，并离开不舒服的情境。',
+        'Schools are cutting field trips.': '学校正在削减实地考察旅行。',
+        'On the contrary, homeschooling can move outdoors, to the beach or the zoo.': '相反，在家上学可以走向户外，去海滩或动物园。',
+        'For homeschooling families, the whole world is a classroom.': '对在家上学的家庭来说，整个世界都是教室。',
+        'Learning takes place everywhere and it never ends.': '学习无处不在，永不停息。'
+    },
+
+    // ========== 11. 2018年10月 · George Washington Carver ==========
+    '2018-10': {
+        'George Washington Carver was born in Missouri between 1861 and 1864.': '乔治·华盛顿·卡弗于1861年至1864年间出生在密苏里州。',
+        'He was born into slavery.': '他出生时是奴隶。',
+        'It was not until the end of the Civil War that George became free.': '直到内战结束，乔治才获得自由。',
+        'As he grew up, George loved to read and learn.': '在成长过程中，乔治热爱阅读和学习。',
+        'Black children were not allowed to go to the same schools as white children.': '黑人儿童不被允许和白人儿童上同一所学校。',
+        'Every early morning, he left home to go to the school.': '每天一大早，他就离开家去上学。',
+        'There he studied very hard.': '在那里他学习非常努力。',
+        'After he finished high school, George wanted to go to college.': '高中毕业后，乔治想上大学。',
+        'At that time, few black students could afford the college tuition (学费).': '当时，很少有黑人学生能负担得起大学学费。',
+        'He worked for a time until he could borrow money to go to college.': '他工作了一段时间，直到能借到钱去上大学。',
+        'In 1890 he went to Simpson College in Iowa.': '1890年，他去了爱荷华州的辛普森学院。',
+        'His drawings of plants were so good that his teacher suggested he study botany, which is the science of plants.': '他的植物画非常好，以至于老师建议他学习植物学，也就是研究植物的科学。',
+        'George went to an agricultural college in Iowa in 1891, where he not only graduated but also taught students.': '1891年乔治进入爱荷华州的一所农业学院，在那里他不仅毕业了，还教了学生。',
+        'George continued to study plants.': '乔治继续研究植物。',
+        'In 1896, he was invited to teach at the Tuskegee Institute in Alabama.': '1896年，他被邀请到阿拉巴马州的塔斯基吉学院任教。',
+        'He worked there as a professor for 47 years.': '他在那里当了47年的教授。',
+        'He also became an important research scientist.': '他也成为一位重要的研究科学家。',
+        'He discovered new ways to use plants.': '他发现了利用植物的新方法。',
+        'These include dyes, plastics, paint, and makeup.': '这些包括染料、塑料、油漆和化妆品。',
+        'He also taught farmers how to grow crops to help the soil, and new ways to farm.': '他还教农民如何种植作物以改善土壤，以及新的耕作方法。',
+        'In 1943 George Washington Carver died.': '1943年乔治·华盛顿·卡弗去世。',
+        'There is a national monument to him in Missouri where he grew up.': '在他长大的密苏里州有一座纪念他的国家纪念碑。',
+        'He has had a ship named after him.': '有一艘船以他的名字命名。',
+        'In 1990 he was admitted to the National Inventors Hall of Fame.': '1990年，他入选国家发明家名人堂。',
+        'The boy who wanted to learn became a great inventor and scientist.': '那个想学习的男孩成为一位伟大的发明家和科学家。'
+    },
+
+    // ========== 12. 2019年4月 · A Lucky Pen ==========
+    '2019-04': {
+        '"Mommy, I\'ve got something for you!"': '"妈妈，我有东西给你！"',
+        'George ran through the door after school one day.': '一天放学后，乔治跑进门。',
+        'He waved something above his head.': '他在头顶挥舞着什么东西。',
+        '"See, it\'s a lucky pen!"': '"看，这是一支幸运笔！"',
+        'I looked at the pen in my hand.': '我看着手里的笔。',
+        'There was nothing special about it.': '它没有什么特别的。',
+        'But I didn\'t realize how special it was at that moment.': '但那一刻我并没有意识到它有多特别。',
+        'I had made the decision to pursue a career in writing.': '我已决定从事写作职业。',
+        'I had dreamed about it for a long time but I was afraid to take a chance.': '我梦想了很久，但害怕冒险。',
+        'I was scared of rejection.': '我害怕被拒绝。',
+        'The night before, I had voiced those fears to my husband when I thought George wasn\'t listening.': '前一天晚上，我以为乔治没在听时，向丈夫说出了这些恐惧。',
+        'But George must have overheard us.': '但乔治一定无意中听到了。',
+        'Now he stood in front of me, watching me examine the pen.': '现在他站在我面前，看着我把玩那支笔。',
+        '"You don\'t have to be scared now," he said.': '"你现在不用害怕了，"他说。',
+        '"This pen will make your stories great and everyone will love you."': '"这支笔会让你的故事很棒，每个人都会喜欢你。"',
+        'Tears filled my eyes.': '泪水充满了我的眼睛。',
+        'Rejection didn\'t seem like such a big deal any more.': '被拒绝似乎不再那么重要了。',
+        'Even if I never sold the first story, I had everything I could ever need.': '即使我从未卖出第一个故事，我也已经拥有了我所需的一切。',
+        'George in my life!': '我生命中的乔治！',
+        'I found out later how lucky I was when I heard what he did to get the pen.': '后来我听说了他为得到那支笔所做的事情，才知道我有多幸运。',
+        'During lunch break at school that day, George heard a boy talking about a lucky pen he had.': '那天学校午休时，乔治听到一个男孩在谈论他的一支幸运笔。',
+        'The boy was a tough negotiator but George didn\'t give up.': '那个男孩是个难缠的谈判者，但乔治没有放弃。',
+        'In the end, he traded his lunch, his favorite cartoon book, and his new football, his most prized possession for that pen.': '最终，他用他的午餐、最喜欢的漫画书和最新的足球——他最珍视的财产——换来了那支笔。',
+        'Just to make me feel better.': '只是为了让我感觉好一些。',
+        'It never fails to remind me just how lucky I am!': '它总能提醒我我有多幸运！',
+        'I am the luckiest mother in the world now and forever.': '我现在和永远都是世界上最幸运的母亲。'
+    },
+
+    // ========== 13. 2019年10月 · Cultural Differences in England and France ==========
+    '2019-10': {
+        'Cultural differences can take many forms.': '文化差异可以采取许多形式。',
+        'I have noticed many differences in French culture compared to English culture, from the way people dress, to their attitudes towards food, to what they do for fun.': '我注意到法国文化与英国文化有许多差异，从人们穿着的方式，到对食物的态度，再到娱乐方式。',
+        'One thing that has struck me in particular in France is people\'s personal interactions with each other.': '在法国，特别让我印象深刻的一件事是人们的个人互动方式。',
+        'Firstly, it\'s the kissing.': '首先是亲吻。',
+        'Everyone kisses each other on the cheek.': '每个人都互相亲吻脸颊。',
+        'It\'s a greeting, instead of saying "hi" or "hello".': '这是一种问候方式，而不是说"嗨"或"你好"。',
+        'Everyone participates in the kissing ritual, the young, the old, male, female, strangers and friends.': '每个人都参与这一亲吻仪式，年轻的、年老的、男性、女性、陌生人和朋友。',
+        'I kiss my friends.': '我亲吻我的朋友。',
+        'I kiss the teachers at the school.': '我亲吻学校的老师。',
+        'And even if I\'m in a hurry, I am still expected to make time to give acquaintances a quick kiss on the cheek as I rush past.': '即使我很匆忙，当我匆匆经过时，仍被期望抽出时间给熟人一个脸颊上的快速亲吻。',
+        'I don\'t mind it.': '我不介意。',
+        'It quickly turns strangers into acquaintances, and acquaintances into friends.': '它很快把陌生人变成熟人，把熟人变成朋友。',
+        'Another thing that I\'ve noticed is that people in France are much more open with people they don\'t know.': '我注意到的另一件事是，在法国，人们对不认识的人要开放得多。',
+        'In France, however, on long train journeys people have often started a conversation with me for no reason.': '然而在法国，在长途火车旅行中，人们经常无缘无故地和我攀谈。',
+        'They have a chat simply to pass the time.': '他们只是聊天来消磨时间。',
+        'And I really enjoy being able to share a part of my life and my story with someone else.': '我真的很喜欢能够与别人分享我生活的一部分和我的故事。',
+        'Whatever impressions you may have about French people, I have found that they are, for the most part, open and at ease talking to strangers.': '无论你对法国人有什么印象，我发现他们大多是开放且自在地与陌生人交谈的。'
+    },
+
+    // ========== 14. 2020年8月 · How to Talk to a Doctor ==========
+    '2020-08': {
+        'It\'s one of the saddest situations in modern medicine: The average doctor\'s appointment lasts 15 minutes or less.': '这是现代医学中最令人悲哀的情况之一：医生的平均门诊时间只有15分钟或更短。',
+        'That doesn\'t leave much time for chatting about the weather or your mood.': '这就没有留下多少时间聊天气或心情了。',
+        'What you don\'t realize — but what I see very clearly as a doctor — is that what the patient says is more important than ever.': '你没有意识到的——但作为一名医生我清楚地看到——病人说的话比以往任何时候都更重要。',
+        'They can also make it much harder for me to figure out what\'s wrong with you.': '它们也可能使我更难找出你哪里出了问题。',
+        'Medical schools teach a specific way to conduct an office visit.': '医学院教授一种特定的门诊流程。',
+        'Part one is the complaint.': '第一部分是主诉。',
+        'Part two is the physical exam.': '第二部分是体格检查。',
+        'And part three is when the doctor gives you a diagnosis and prescribes tests or a treatment.': '第三部分是医生给你诊断并开检查或治疗。',
+        'Chances are, you focus on part three, but the patients who receive the best care are those who master part one.': '很可能你关注的是第三部分，但得到最好护理的病人是那些掌握第一部分的人。',
+        'The key is to describe in detail what you\'ve been feeling — not just "bad" but what kind of bad, for how long, and after what kind of activity.': '关键是详细描述你的感受——不只是"难受"，而是哪种难受、持续多久、在什么活动之后。',
+        'Even though I\'ve been a doctor for many years, I tend to be a little nervous when I\'m the one sitting on the exam table.': '尽管我行医多年，当我自己坐在检查台上时，我往往也会有点紧张。',
+        'If I haven\'t prepared, I lose track of the details I intended to share.': '如果我没有准备，我就会忘记我想要分享的细节。',
+        'When the doctor asks you questions, you can be more specific, and the diagnosis and treatment will be more accurate.': '当医生问你问题时，你可以更具体，诊断和治疗也会更准确。',
+        'And there may be a few minutes left over for a little pleasant conversation!': '可能还会剩下几分钟进行愉快的交谈！'
+    }
+
+        // ========== 15. 2020年10月 · Lack of Sleep Is Dangerous ==========
+    '2020-10': {
+        'Do you know that if you miss out too much sleep you will die?': '你知道吗，如果你缺觉太多，你会死？',
+        'It\'s true!': '这是真的！',
+        'If you stay awake for a long, long time, your brain and body will break down.': '如果你长时间保持清醒，你的大脑和身体会崩溃。',
+        'The unofficial world record for staying awake is 11 days, and it\'s held by Randy Gardner.': '保持清醒的非官方世界纪录是11天，由兰迪·加德纳保持。',
+        'He also had help from TV and radio reporters, a sleep researcher and a doctor.': '他还得到了电视和广播记者、一位睡眠研究员和一位医生的帮助。',
+        'What happened?': '发生了什么？',
+        'Then his brain started to lose sense.': '然后他的大脑开始失去理智。',
+        'On day 4, he thought a street sign was really a person.': '第4天，他以为一个路牌真的是一个人。',
+        'On day 6, he began to speak very slowly.': '第6天，他开始说话非常缓慢。',
+        'On day 9, he couldn\'t finish sentences.': '第9天，他无法把句子说完。',
+        'On day 10, Randy thought he saw a forest in the next room.': '第10天，兰迪以为他看到隔壁房间有一片森林。',
+        'Eventually, after he\'d broken the world record, Randy was told to go to sleep.': '最终，在他打破世界纪录后，兰迪被告知去睡觉。',
+        'Experiments that keep people awake for dangerously long periods are always stopped before the patients break down.': '让人保持清醒的危险长时间实验总是在患者崩溃之前被停止。',
+        'Rats, however, aren\'t so well cared for.': '然而，老鼠就没有被如此照顾。',
+        'That\'s sooner than if they\'d been allowed to sleep but were given no food.': '这比让它们睡觉但不给食物还要快。',
+        'They get really thin.': '它们变得非常瘦。',
+        'But that\'s not because they stop eating — quite the opposite.': '但那不是因为它们停止进食——恰恰相反。',
+        'Even though these rats are eating food, their bodies can\'t process it in the normal way.': '即使这些老鼠在吃食物，它们的身体也无法以正常方式处理它。',
+        'On top of that, their little bodies lose more heat than normal, which makes them weak.': '除此之外，它们小小的身体比正常情况失去更多热量，这使它们虚弱。',
+        'This means that they need more food to stay at a healthy temperature.': '这意味着它们需要更多食物来保持健康的体温。',
+        'And that\'s what lack of sleep does for you.': '这就是缺觉对你的影响。'
+    },
+
+    // ========== 16. 2021年4月 · Swiss Banks ==========
+    '2021-04': {
+        'Switzerland is well-known for chocolate and its watch-making industry.': '瑞士以巧克力和制表业闻名。',
+        'It is even more famous for its unique banking and financial system.': '它更因独特的银行和金融体系而闻名。',
+        'Banking in Switzerland goes back to the 18th century.': '瑞士银行业可以追溯到18世纪。',
+        'In the past, not only rich people but also dictators (独裁者) kept their money in Swiss banks.': '过去，不仅富人有，连独裁者也把钱存在瑞士银行。',
+        'During World War II German Nazis (纳粹) put much of their money in Switzerland.': '二战期间，德国纳粹把大量资金存在瑞士。',
+        'Swiss banks are popular for many reasons.': '瑞士银行受欢迎有很多原因。',
+        'It enjoys one of the highest per capita (人均) incomes in the world.': '它拥有世界上最高的人均收入之一。',
+        'It has been neutral for many centuries, especially during the two world wars.': '它已经保持中立好几个世纪，特别是在两次世界大战期间。',
+        'In addition, the Swiss franc is one of the most stable currencies in the world.': '此外，瑞士法郎是世界上最稳定的货币之一。',
+        'Most importantly, Swiss banks follow very strict privacy rules.': '最重要的是，瑞士银行遵循非常严格的隐私规则。',
+        'In 1934, a law was passed that forbade Swiss banks to reveal the names of account holders.': '1934年，通过了一项法律，禁止瑞士银行透露账户持有人的姓名。',
+        'If a Swiss banker reveals a person\'s bank account without permission, he or she commits a crime.': '如果瑞士银行家未经许可透露某人的银行账户，他或她就犯了罪。',
+        'Such regulations have made Switzerland a popular destination for many people.': '这样的规定使瑞士成为许多人青睐的目的地。',
+        'Lately, however, the Swiss government has been under heavy pressure from other countries.': '然而最近，瑞士政府一直受到来自其他国家的巨大压力。',
+        'They want the banks to reveal the names of possible criminals.': '他们希望银行透露可能犯罪者的名字。'
+    },
+
+    // ========== 17. 2021年10月 · North Africa ==========
+    '2021-10': {
+        'Africa is the second largest continent on Earth.': '非洲是地球上第二大的大陆。',
+        'It is about 8,000 kilometers long from north to south.': '它从北到南长约8000公里。',
+        'It can be divided into three major regions: northern Africa, central Africa, and southern Africa.': '它可以分为三大区域：北非、中非和南部非洲。',
+        'Africa is separated from Europe by the Mediterranean Sea (地中海).': '非洲被地中海与欧洲分隔。',
+        'It is connected to Asia in the east.': '它在东部与亚洲相连。',
+        'For this reason, it has been easy for people from Europe, Asia and other areas to come to North Africa.': '因此，来自欧洲、亚洲和其他地区的人们很容易来到北非。',
+        'Most of North Africa is covered by the Sahara Desert.': '北非大部分被撒哈拉沙漠覆盖。',
+        'There is little rainfall here.': '这里降雨很少。',
+        'The few people who live in the desert live in oases (绿洲).': '住在沙漠里的少数人住在绿洲中。',
+        'The valley of the Nile River forms one of the oases that stretch across the desert in the east.': '尼罗河谷形成了东部横贯沙漠的绿洲之一。',
+        'Many North African nations have a very important resource.': '许多北非国家有一种非常重要的资源。',
+        'They have large deposits of petroleum.': '他们有大量的石油储量。',
+        'In return, these nations receive a lot of money.': '作为回报，这些国家收到很多钱。',
+        'They are spending some of this money to make life better for their people.': '他们正在花费其中一些钱来改善人民的生活。',
+        'Egypt is an important nation in North Africa.': '埃及是北非的一个重要国家。',
+        'It has served as a bridge between Africa and Asia.': '它一直是非洲和亚洲之间的桥梁。',
+        'People from many nations have passed through Egypt.': '来自许多国家的人们都经过埃及。',
+        'Today, it controls the Suez Canal.': '今天，它控制着苏伊士运河。',
+        'The canal connects the Mediterranean Sea and the Red Sea.': '这条运河连接地中海和红海。',
+        'It is important for ships traveling between nations in Europe and Asia.': '它对在欧洲和亚洲国家之间航行的船只很重要。'
+    },
+
+    // ========== 18. 2022年4月 · The Coyote（丛林狼） ==========
+    '2022-04': {
+        'The coyote is a relative of the dog and the wolf.': '丛林狼是狗和狼的近亲。',
+        'Like its relatives, it mostly feeds on other animals.': '像它的亲戚一样，它主要以其他动物为食。',
+        'It will, however, eat a wide variety of foods, including insects, fruits and vegetables.': '然而，它会吃各种各样的食物，包括昆虫、水果和蔬菜。',
+        'Coyotes are found throughout most of North America, from Mexico and Central America to Canada and Alaska.': '丛林狼遍布北美大部分地区，从墨西哥和中美洲到加拿大和阿拉斯加。',
+        'The color of its coat depends on where it lives.': '它毛皮的颜色取决于它住在哪里。',
+        'Like the wolf, coyotes live in groups, or packs.': '像狼一样，丛林狼群居，或称为群体。',
+        'The coyote pack is usually smaller than a wolf pack.': '丛林狼群通常比狼群小。',
+        'The pack will often divide into pairs to hunt.': '群体通常会分成对去捕猎。',
+        'Female coyotes give birth to baby coyotes once a year.': '雌性丛林狼每年生一次幼崽。',
+        'Over half of the babies will die before they reach adulthood.': '超过一半的幼崽会在成年之前死亡。',
+        'Male babies usually leave the pack to find their own territory.': '雄性幼崽通常会离开群体去寻找自己的领地。',
+        'Wolves and coyotes compete for the same animals for food.': '狼和丛林狼为同样的动物食物竞争。',
+        'Since the coyote is smaller than the wolf, wolves will usually drive the coyote out of any shared living areas.': '由于丛林狼比狼小，狼通常会把丛林狼赶出任何共享的生活区域。',
+        'The coyote adapts easily to new areas.': '丛林狼容易适应新地区。',
+        'Unlike the wolf, the coyote\'s living area increased when more and more people settled across North America.': '与狼不同，当越来越多的人在北美定居时，丛林狼的生活区域扩大了。',
+        'Once the New England settlers eliminated wolves, the coyote moved in.': '一旦新英格兰定居者消灭了狼，丛林狼就搬了进来。',
+        'Scientists who have studied the coyote believe it is better than the wolf at living in human areas.': '研究丛林狼的科学家认为它比狼更擅长在人类地区生活。',
+        'They find enough supply of food in these areas, since coyotes are willing to eat garbage, rodents (such as rabbits and mice) and even small pets.': '它们在这些地区找到足够的食物，因为丛林狼愿意吃垃圾、啮齿动物（如兔子和老鼠）甚至小宠物。',
+        'Scientists estimate that as many as 2,000 coyotes may be living in the Chicago area.': '科学家估计芝加哥地区可能有多达2000只丛林狼。'
+    },
+
+    // ========== 19. 2022年10月 · Insomnia (失眠) ==========
+    '2022-10': {
+        'I just could not fall asleep the other night.': '前几天晚上我就是睡不着。',
+        'I just didn\'t feel sleepy.': '我就是不觉得困。',
+        'I can\'t explain why, but it was really annoying.': '我无法解释为什么，但这真的很烦人。',
+        'I got very bored lying in bed, so I decided to read a book.': '躺在床上很无聊，所以我决定看书。',
+        'But even when I finished reading, I still didn\'t feel tired.': '但即使看完了书，我仍然不觉得累。',
+        'So I listened to some peaceful music.': '所以我听了一些宁静的音乐。',
+        'That didn\'t work, either.': '那也没有用。',
+        'I have heard people say if you have a warm drink before bedtime it will help you drift off to sleep.': '我听人们说，如果睡前喝一杯热饮，能帮你入睡。',
+        'So I went downstairs and made myself a cup of tea.': '所以我下楼给自己泡了杯茶。',
+        'Still, I couldn\'t sleep.': '仍然，我睡不着。',
+        'I was getting very frustrated by this point!': '到这时我变得非常沮丧！',
+        'It felt strange to be awake while everyone else was asleep.': '在别人都睡着时自己醒着，感觉很奇怪。',
+        'In fact, it was a little big frightening.': '事实上，这有点吓人。',
+        'When you go to sleep, it feels like one day ends and another begins.': '当你入睡时，感觉像一天结束、新的一天开始。',
+        'But if you stay up late, you realize that day and night are just a gentle transition (转变), a cycle which has no end and no beginning.': '但如果你熬夜，你会意识到白天和黑夜只是一个温柔的转变，一个没有终点和起点的循环。',
+        'At 4 a.m., I noticed a faint light coming through my curtains.': '凌晨4点，我注意到微弱的光线透过窗帘。',
+        'The sun had started to rise!': '太阳已经开始升起了！',
+        'Normally, I\'m a very heavy sleeper.': '通常，我睡得很沉。',
+        'So on this occasion, I considered myself lucky to see a beautiful sunrise.': '所以这一次，我认为自己很幸运能看到美丽的日出。',
+        'I knew I needed to get some rest, but it seemed the harder I tried to force myself asleep, the more difficult it was.': '我知道我需要休息，但似乎我越努力强迫自己入睡，就越难入睡。',
+        'Eventually, I just let my mind go free.': '最终，我让思绪自由飘荡。',
+        'I listened to the birdsong... and the next thing I knew it was 11 a.m.!': '我听着鸟鸣……接下来我知道已经是上午11点了！',
+        'I was happy that I had managed to get some sleep!': '我很高兴终于睡了一会儿！',
+        'I have never struggled with sleeping before, so this was my first experience of insomnia.': '我以前从未失眠过，所以这是我第一次经历失眠。',
+        'Fortunately, I have been sleeping well since then.': '幸运的是，从那以后我一直睡得很好。'
+    },
+
+    // ========== 20. 2023年4月 · Banning Mobile Phones at School ==========
+    '2023-04': {
+        'It is a question that keeps some parents awake at night.': '这是一个让一些父母夜不能寐的问题。',
+        'Should children be allowed to take mobile phones to school?': '应该允许孩子带手机去学校吗？',
+        'For parents who want their children to do well at school, it is no.': '对于想让孩子在学校表现好的父母来说，答案是不。',
+        'Banning mobile phones at school is effective.': '在学校禁用手机是有效的。',
+        'According to a UK study, after schools banned mobile phones, the test scores of students improved by 6.4%.': '根据一项英国研究，在学校禁止使用手机后，学生的考试成绩提高了6.4%。',
+        'The findings will influence the debate about children and mobile phones.': '这些发现将影响关于儿童和手机的辩论。',
+        'In the UK, more than 90% of teenagers own a mobile phone; in the US, 75% have one.': '在英国，超过90%的青少年拥有手机；在美国，75%的人拥有。',
+        'The popular mobile phone is a problem in the eye of teachers.': '在老师看来，流行的手机是个问题。',
+        'In a 2001 survey, no school banned mobiles.': '在2001年的一项调查中，没有学校禁止手机。',
+        'By 2007, this had risen to 50%.': '到2007年，这一比例上升到50%。',
+        'By 2012, 98% of schools had taken action.': '到2012年，98%的学校已经采取了行动。',
+        'Some did not allow phones.': '有些学校不允许带手机。',
+        'The others required them to be handed in at the beginning of the day.': '其他的学校要求学生在一天开始时上交手机。',
+        'New York City has lifted a 10-year ban on phones at school.': '纽约市取消了在学校禁用手机长达10年的禁令。',
+        'It says that lifting the ban will promote equality.': '它说取消禁令将促进平等。',
+        '"This view is wrong," the researchers of the UK study write.': '"这个观点是错误的，"英国研究的作者写道。',
+        '"We found that the ban led to improvements in test scores among students. Low-achieving students gained the most.': '"我们发现禁令导致学生考试成绩提高。成绩差的学生获益最大。',
+        'Allowing phones into schools will harm the lowest-achieving students the most."': '允许手机进入学校对成绩最差的学生伤害最大。"',
+        'The UK study was carried out at Birmingham, London, Leicester and Manchester schools before and after bans were introduced.': '这项英国研究在伯明翰、伦敦、莱斯特和曼彻斯特的学校进行，在禁令实施前后分别进行。',
+        '"Technology is commonly viewed as increasing efficiency," the researchers write.': '"技术通常被视为提高效率，"研究人员写道。',
+        '"Modern technology is used in the classroom to improve student performance.': '"现代技术被用于课堂以提高学生表现。',
+        'Some students will pay no attention to their class."': '一些学生将不关注他们的课堂。"'
+    },
+
+    // ========== 21. 2023年10月 · How to Shoot a Movie ==========
+    '2023-10': {
+        'A movie is a series of pictures.': '电影是一系列图片。',
+        'Each image is a still picture, just like a picture you take with a regular camera.': '每个图像都是一张静止的照片，就像你用普通相机拍的照片一样。',
+        'But the pictures flash by so fast in a movie.': '但在电影中，这些图片闪过得非常快。',
+        'As a result, you see horses run, people talk, and other kinds of motion.': '结果，你看到马奔跑、人说话以及其他各种运动。',
+        'Movies are also called films because they are filmed.': '电影也被称为film，因为它们是被拍摄的。',
+        'Lots of work has to be done before the filming begins.': '在拍摄开始之前必须做很多工作。',
+        'The producer and the director plan how and when they will film each scene.': '制片人和导演计划如何以及何时拍摄每个场景。',
+        'A movie is filmed scene by scene.': '电影是一个场景一个场景拍摄的。',
+        'The scenes are not usually filmed in the order you see in the movie.': '场景通常不是按照你在电影中看到的顺序拍摄的。',
+        'Sometimes the weather is bad and an outdoor scene cannot be filmed.': '有时天气不好，户外场景无法拍摄。',
+        'Big fancy sets take a long time to build.': '大型精美布景需要很长时间来搭建。',
+        'Scenes using these sets are often shot later.': '使用这些布景的场景通常稍后拍摄。',
+        'However, you may see them at the beginning of the film.': '然而，你可能会在电影开头看到它们。',
+        'Sometimes a movie needs special effects.': '有时电影需要特效。',
+        'They include small models of huge scenes and cleverly designed sets.': '它们包括巨大场景的小模型和巧妙设计的布景。',
+        'Moviemakers use these to film scenes and places that do not exist.': '电影制作人用这些来拍摄不存在的场景和地点。',
+        'They might use a small model of a large building to film the building falling down.': '他们可能用一栋大楼的小模型来拍摄大楼倒塌。',
+        'Films can be turned into computer files.': '电影可以转换为计算机文件。',
+        'They can use computers to make new images.': '他们可以用计算机来制作新的图像。',
+        'Many images in Titanic, including crowds of people on the ship, were actually made by computer.': '《泰坦尼克号》中的许多图像，包括船上的人群，实际上是由计算机生成的。',
+        'In some other films, computers were used to make the actors look as if they were fighting while floating in the air.': '在其他一些电影中，计算机被用来使演员看起来像是在空中漂浮着打斗。'
+    }
+
+ .sentence-block { margin-bottom: 10px; }
+.sentence-block:last-child { margin-bottom: 0; }
+.sentence-line {
+    font-weight: 500;
+    color: #0a1f2e;
+    line-height: 1.8;
+}
+.trans-text {
+    color: #2d4f7c;
+    font-size: 0.92rem;
+    margin-top: 4px;
+    padding-left: 12px;
+    border-left: 3px solid #b8cce4;
+    font-style: normal;
+}
