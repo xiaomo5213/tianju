@@ -120,6 +120,14 @@
             font-weight: 500;
             color: #0a1f2e;
             line-height: 1.8;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .sentence-line .eng-text {
+            flex: 1;
+            min-width: 0;
         }
         .trans-text {
             color: #2d4f7c;
@@ -129,6 +137,29 @@
             border-left: 3px solid #b8cce4;
             font-style: normal;
         }
+
+        /* ===== 发音按钮 ===== */
+        .speak-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: #e1eaf6;
+            border-radius: 50%;
+            color: #1e4b8a;
+            font-size: 13px;
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: background 0.2s;
+            user-select: none;
+            vertical-align: middle;
+            margin-left: 6px;
+            margin-top: 3px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .speak-btn:hover { background: #c2d6f0; }
+        .speak-btn.speaking { background: #1f4e8c; color: #fff; }
 
         /* ===== 空格标记 ===== */
         .blank-slot {
@@ -151,14 +182,12 @@
             background: #eef3fe;
             color: #1f4e8c;
         }
-        /* 未作答：虚化题号 */
         .blank-slot.empty {
             color: #b8c9d9;
             font-style: italic;
             font-weight: 400;
             border-bottom: 1px dashed #c7d5e3;
         }
-        /* 已作答：显示选项内容，作为句子的一部分 */
         .blank-slot.filled {
             color: #0e4d8b;
             font-weight: 600;
@@ -179,60 +208,6 @@
         .blank-slot.active {
             box-shadow: 0 0 0 2px rgba(31, 78, 140, 0.35);
         }
-
-        /* ===== 选项列表 ===== */
-        .options-card {
-            margin-top: 20px;
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 16px;
-            border: 1px solid #e2e9f2;
-        }
-        .options-title {
-            font-weight: 600;
-            color: #0d2e4e;
-            margin-bottom: 12px;
-            font-size: 1rem;
-        }
-        .options-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .option-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 10px 14px;
-            background: #f9fcff;
-            border: 1px solid #e4ecf5;
-            border-radius: 12px;
-            font-size: 0.92rem;
-            color: #1f3d60;
-            cursor: pointer;
-            transition: all 0.15s;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .option-item:hover {
-            background: #eef3fe;
-            border-color: #b8cce4;
-        }
-        .option-item.selected {
-            background: #1f4e8c;
-            border-color: #1f4e8c;
-            color: white;
-            box-shadow: 0 4px 8px rgba(31, 78, 140, 0.2);
-        }
-        .option-item.used {
-            opacity: 0.4;
-            pointer-events: none;
-        }
-        .option-letter {
-            font-weight: 700;
-            flex-shrink: 0;
-            width: 22px;
-        }
-        .option-text { flex: 1; line-height: 1.5; }
 
         /* ===== 试题卡片 ===== */
         .quiz-card {
@@ -302,18 +277,25 @@
             font-size: 0.95rem;
             line-height: 1.6;
         }
-        .options { display: flex; flex-wrap: wrap; gap: 8px; }
+        /* 选项列表：每项单独一行，显示完整选项内容 */
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
         .opt {
             background: #ffffff;
             border: 1px solid #cfdcec;
-            padding: 8px 14px;
-            border-radius: 40px;
-            font-size: 0.88rem;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 0.9rem;
             color: #1f3d60;
             cursor: pointer;
             transition: all 0.12s;
             user-select: none;
             -webkit-tap-highlight-color: transparent;
+            line-height: 1.5;
+            text-align: left;
         }
         .opt.selected {
             background: #1f4e8c;
@@ -321,7 +303,7 @@
             color: white;
             box-shadow: 0 4px 8px rgba(31, 78, 140, 0.2);
         }
-        .opt:active { transform: scale(0.97); }
+        .opt:active { transform: scale(0.99); }
         .opt.disabled { opacity: 0.7; pointer-events: none; }
 
         .explain-inline {
@@ -495,7 +477,6 @@
     }
 
     // 将段落文本中的 [26] 等标记替换为 HTML
-    // mode = 'preview' (未作答时虚化题号) / 'filled' (已作答时显示选项内容)
     function renderBlankSlots(text, exam, answers, isSubmitted, activeBlank) {
         let html = text;
         ['26','27','28','29','30'].forEach(k => {
@@ -507,12 +488,10 @@
                 let slotContent = '';
 
                 if (userAns) {
-                    // 已作答：显示选项内容（作为句子的一部分，不分行）
                     slotClass += ' filled';
                     const optText = getOptionText(exam, userAns);
                     slotContent = `<strong>${userAns}.</strong> ${optText}`;
                 } else {
-                    // 未作答：虚化题号
                     slotClass += ' empty';
                     slotContent = `[${k}]`;
                 }
@@ -529,11 +508,7 @@
         return html;
     }
 
-    function hasBlankMarker(text) {
-        return ['26','27','28','29','30'].some(k => text.includes(`[${k}]`));
-    }
-
-    // 将 [26] 等标记替换为实际选项内容（纯文本，用于翻译匹配）
+    // 将 [26] 等标记替换为实际选项内容（纯文本，用于翻译匹配和朗读）
     function replaceMarkersWithOptionText(text, exam, answers) {
         let result = text;
         ['26','27','28','29','30'].forEach(k => {
@@ -541,11 +516,9 @@
             if (result.includes(marker)) {
                 const userAns = answers[k];
                 if (userAns) {
-                    // 用选项内容替换标记
                     const optText = getOptionText(exam, userAns);
                     result = result.replace(marker, optText);
                 } else {
-                    // 未作答，用正确答案内容替换（用于翻译匹配）
                     const correctLetter = exam.answers[k];
                     const optText = getOptionText(exam, correctLetter);
                     result = result.replace(marker, optText);
@@ -585,22 +558,26 @@
             const colorClass = `para-${(pIdx % 6) + 1}`;
 
             if (showTrans) {
-                // 翻译模式：按句子拆分，逐句显示英文 + 中文
+                // 翻译模式：按句子拆分，逐句显示英文 + 发音按钮 + 中文
                 const sentences = paraText.match(/[^.!?]+[.!?]*/g) || [paraText];
                 let sentencesHtml = '';
                 sentences.forEach(sent => {
                     const trimmed = sent.trim();
                     if (!trimmed) return;
 
-                    // 关键：用选项内容替换标记后，再去翻译字典里查找
+                    // 1. 用正确答案填充标记，得到完整句子（用于翻译匹配和朗读）
                     const filledText = replaceMarkersWithOptionText(trimmed, exam, answers);
-                    // 渲染带空格槽的 HTML（保留可点击的槽）
+                    // 2. 渲染含空格槽的 HTML（用户仍可点击空格作答）
                     const replacedHtml = renderBlankSlots(trimmed, exam, answers, isSubmitted, activeBlank);
-                    // 尝试用"填充后的完整句子"查询翻译
+                    // 3. 查翻译
                     const zh = transDict[filledText] || transDict[trimmed] || '';
 
                     sentencesHtml += `<div class="sentence-block">`;
-                    sentencesHtml += `<div class="sentence-line">${replacedHtml}</div>`;
+                    sentencesHtml += `<div class="sentence-line">`;
+                    sentencesHtml += `<span class="eng-text">${replacedHtml}</span>`;
+                    // 发音按钮：只翻译模式显示，朗读完整的英文句子
+                    sentencesHtml += `<span class="speak-btn" data-speak="${encodeURIComponent(filledText)}" onclick="speakSentence(this)" title="点击朗读英文">🔊</span>`;
+                    sentencesHtml += `</div>`;
                     if (zh) sentencesHtml += `<div class="trans-text">${zh}</div>`;
                     sentencesHtml += `</div>`;
                 });
@@ -612,22 +589,7 @@
             }
         });
 
-        // ========== 选项列表 ==========
-        let optionsHtml = '';
-        optionsHtml += `<div class="options-card">`;
-        optionsHtml += `<div class="options-title">📋 选项（点击选项填入上方空格）</div>`;
-        optionsHtml += `<div class="options-list">`;
-        exam.options.forEach(opt => {
-            const isUsed = Object.values(answers).includes(opt.letter);
-            const selectedClass = isUsed ? 'selected used' : '';
-            optionsHtml += `<div class="option-item ${selectedClass}" data-letter="${opt.letter}" onclick="pickOption('${opt.letter}')">`;
-            optionsHtml += `<span class="option-letter">${opt.letter}.</span>`;
-            optionsHtml += `<span class="option-text">${opt.text}</span>`;
-            optionsHtml += `</div>`;
-        });
-        optionsHtml += `</div></div>`;
-
-        // ========== 右侧试题 ==========
+        // ========== 右侧试题（选项内容直接显示在每道题下方） ==========
         let quizHtml = '';
         quizHtml += `<div class="quiz-header">`;
         quizHtml += `<h2>📝 填句补文</h2>`;
@@ -645,7 +607,7 @@
             exam.options.forEach(opt => {
                 const selectedClass = (userAns === opt.letter) ? 'selected' : '';
                 const disabledClass = isSubmitted ? 'disabled' : '';
-                quizHtml += `<div class="opt ${selectedClass} ${disabledClass}" data-qid="${k}" data-opt="${opt.letter}" onclick="selectOption(this, '${k}', '${opt.letter}')">${opt.letter}</div>`;
+                quizHtml += `<div class="opt ${selectedClass} ${disabledClass}" data-qid="${k}" data-opt="${opt.letter}" onclick="selectOption(this, '${k}', '${opt.letter}')"><strong>${opt.letter}.</strong> ${opt.text}</div>`;
             });
             quizHtml += `</div></div>`;
 
@@ -667,6 +629,7 @@
             submitAreaHtml += `</div>`;
         }
 
+        // ========== 整体组装 ==========
         const html = `
             <h1>📘 填句补文</h1>
             <div class="subhead">
@@ -676,7 +639,6 @@
                 <div class="left-col">
                     <div class="article-card" id="articleCard">
                         ${articleHtml}
-                        ${optionsHtml}
                     </div>
                 </div>
                 <div class="right-col">
@@ -691,11 +653,12 @@
                 <input type="number" id="pageInput" min="1" max="${tianjuExams.length}" value="${currentPage + 1}" inputmode="numeric">
                 <button id="nextBtn" ${currentPage === tianjuExams.length - 1 ? 'disabled' : ''}>下一页 →</button>
             </div>
-            <div class="footnote">点击空格选中 · 再点击选项填入 · 每题2分</div>
+            <div class="footnote">点击空格选中 · 再点击选项填入 · 每题2分 · 点击 🔊 朗读英文</div>
         `;
 
         app.innerHTML = html;
 
+        // 若已提交，填充详解
         if (isSubmitted) {
             ['26','27','28','29','30'].forEach(k => {
                 const explainDiv = document.getElementById(`explain-${k}`);
@@ -726,24 +689,34 @@
         bindEvents();
     }
 
+    // ========== 英文句子朗读 ==========
+    window.speakSentence = function(el) {
+        const text = decodeURIComponent(el.getAttribute('data-speak') || '');
+        if (!text) return;
+
+        if ('speechSynthesis' in window) {
+            // 取消之前的朗读
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            // 视觉反馈
+            el.classList.add('speaking');
+            utterance.onend = () => {
+                el.classList.remove('speaking');
+            };
+            utterance.onerror = () => {
+                el.classList.remove('speaking');
+            };
+            window.speechSynthesis.speak(utterance);
+        } else {
+            alert('您的浏览器不支持语音朗读');
+        }
+    };
+
     window.selectBlank = function(blankId) {
         if (submitted[currentPage]) return;
         activeBlank = blankId;
-        render();
-    };
-
-    window.pickOption = function(letter) {
-        if (submitted[currentPage]) return;
-        if (!activeBlank) {
-            alert('请先点击上方文章中的空格，再选择选项。');
-            return;
-        }
-        const answers = userAnswers[currentPage];
-        ['26','27','28','29','30'].forEach(k => {
-            if (answers[k] === letter) answers[k] = null;
-        });
-        answers[activeBlank] = letter;
-        activeBlank = null;
         render();
     };
 
