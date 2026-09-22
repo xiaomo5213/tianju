@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>填句补文 · 在线练习</title>
+    <title>英语二 · 填句补文 · 在线练习</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -54,7 +54,6 @@
         .left-col { flex: 6; min-width: 300px; }
         .right-col { flex: 4; min-width: 300px; }
 
-        /* ===== 文章卡片 ===== */
         .article-card {
             background: #fbfdff;
             border-radius: 20px;
@@ -99,7 +98,6 @@
             color: white;
         }
 
-        /* 段落背景色 */
         .para-block {
             margin-bottom: 18px;
             border-radius: 16px;
@@ -116,13 +114,8 @@
         .para-5 { background: #e6f2fc; }
         .para-6 { background: #fef1e6; }
 
-        /* 句子（翻译模式下分行显示） */
-        .sentence-block {
-            margin-bottom: 10px;
-        }
-        .sentence-block:last-child {
-            margin-bottom: 0;
-        }
+        .sentence-block { margin-bottom: 10px; }
+        .sentence-block:last-child { margin-bottom: 0; }
         .sentence-line {
             font-weight: 500;
             color: #0a1f2e;
@@ -139,61 +132,52 @@
 
         /* ===== 空格标记 ===== */
         .blank-slot {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 60px;
-            min-height: 30px;
-            padding: 3px 10px;
-            margin: 0 4px;
-            border: 1px dashed #b8cce4;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.5);
-            color: #8aa4bd;
-            font-weight: 500;
-            font-size: 0.85rem;
+            display: inline;
+            padding: 2px 4px;
+            margin: 0 2px;
+            border-radius: 6px;
+            background: transparent;
+            color: #a8bdd1;
+            font-weight: 400;
+            font-size: inherit;
             cursor: pointer;
             transition: all 0.2s;
-            vertical-align: middle;
+            vertical-align: baseline;
             -webkit-tap-highlight-color: transparent;
-            text-align: center;
-            line-height: 1.4;
+            line-height: inherit;
+            border: none;
         }
         .blank-slot:hover {
-            border-color: #1f4e8c;
             background: #eef3fe;
             color: #1f4e8c;
         }
         /* 未作答：虚化题号 */
         .blank-slot.empty {
-            color: #a8bdd1;
+            color: #b8c9d9;
             font-style: italic;
+            font-weight: 400;
+            border-bottom: 1px dashed #c7d5e3;
         }
-        /* 已作答：显示选项内容 */
+        /* 已作答：显示选项内容，作为句子的一部分 */
         .blank-slot.filled {
-            border-style: solid;
-            border-color: #1f4e8c;
-            background: #eef3fe;
-            color: #1f4e8c;
+            color: #0e4d8b;
             font-weight: 600;
+            background: #eef3fe;
+            border-radius: 6px;
+            padding: 2px 6px;
             font-style: normal;
-            min-width: auto;
-            max-width: 260px;
-            text-align: left;
-            white-space: normal;
+            border-bottom: none;
         }
         .blank-slot.correct {
-            border-color: #1a6f3c;
-            background: #e8f6ef;
             color: #1a6f3c;
+            background: #e8f6ef;
         }
         .blank-slot.wrong {
-            border-color: #b13e3e;
-            background: #fde9e9;
             color: #b13e3e;
+            background: #fde9e9;
         }
         .blank-slot.active {
-            box-shadow: 0 0 0 3px rgba(31, 78, 140, 0.25);
+            box-shadow: 0 0 0 2px rgba(31, 78, 140, 0.35);
         }
 
         /* ===== 选项列表 ===== */
@@ -369,14 +353,12 @@
         .explain-inline .wrong-answer { color: #b13e3e; font-weight: 600; }
         .explain-inline .ans-detail { color: #3a5a7a; margin-top: 4px; }
 
-        /* 题目颜色（5色循环） */
         .q-color-1  { background: #fef9e7; border-color: #f0e0b0; }
         .q-color-2  { background: #e8f6ef; border-color: #b8dfc8; }
         .q-color-3  { background: #f3e8fd; border-color: #d9bdf0; }
         .q-color-4  { background: #fde9e9; border-color: #f0bfbf; }
         .q-color-5  { background: #e6f2fc; border-color: #b8d4ee; }
 
-        /* ===== 提交区 ===== */
         .submit-area {
             display: flex;
             gap: 16px;
@@ -408,7 +390,6 @@
             color: #1a3e70;
         }
 
-        /* ===== 底部分页器 ===== */
         .pager-bottom {
             display: flex;
             justify-content: center;
@@ -476,8 +457,6 @@
             .pager-bottom { gap: 10px; }
             .pager-bottom button { padding: 8px 16px; font-size: 0.85rem; }
             .pager-bottom input { width: 55px; padding: 8px 4px; }
-            .blank-slot { min-width: 50px; min-height: 26px; font-size: 0.8rem; padding: 2px 8px; }
-            .blank-slot.filled { max-width: 200px; }
         }
     </style>
 </head>
@@ -486,16 +465,15 @@
     <div class="loading">⏳ 正在加载题库...</div>
 </div>
 
-<!-- 先引入翻译数据，再引入题库数据 -->
 <script src="translations-tianju.js"></script>
 <script src="data-tianju.js"></script>
 
 <script>
     let currentPage = 0;
-    let userAnswers = [];      // [{ '26': 'E', '27': 'A', ... }, ...]
-    let submitted = [];        // [bool, ...]
-    let activeBlank = null;    // 当前选中的空格编号
-    let translationOn = [];    // [bool, ...] 每个考期是否显示翻译
+    let userAnswers = [];
+    let submitted = [];
+    let activeBlank = null;
+    let translationOn = [];
 
     const app = document.getElementById('app');
 
@@ -516,7 +494,8 @@
         return opt ? opt.text : letter;
     }
 
-    // 将段落文本中的 [26] 等标记替换为空格槽的 HTML
+    // 将段落文本中的 [26] 等标记替换为 HTML
+    // mode = 'preview' (未作答时虚化题号) / 'filled' (已作答时显示选项内容)
     function renderBlankSlots(text, exam, answers, isSubmitted, activeBlank) {
         let html = text;
         ['26','27','28','29','30'].forEach(k => {
@@ -528,12 +507,12 @@
                 let slotContent = '';
 
                 if (userAns) {
-                    // 已作答：显示选项内容
+                    // 已作答：显示选项内容（作为句子的一部分，不分行）
                     slotClass += ' filled';
                     const optText = getOptionText(exam, userAns);
                     slotContent = `<strong>${userAns}.</strong> ${optText}`;
                 } else {
-                    // 未作答：虚化显示题号
+                    // 未作答：虚化题号
                     slotClass += ' empty';
                     slotContent = `[${k}]`;
                 }
@@ -550,9 +529,30 @@
         return html;
     }
 
-    // 判断某个句子中是否包含 [26]~[30] 任一标记
     function hasBlankMarker(text) {
         return ['26','27','28','29','30'].some(k => text.includes(`[${k}]`));
+    }
+
+    // 将 [26] 等标记替换为实际选项内容（纯文本，用于翻译匹配）
+    function replaceMarkersWithOptionText(text, exam, answers) {
+        let result = text;
+        ['26','27','28','29','30'].forEach(k => {
+            const marker = `[${k}]`;
+            if (result.includes(marker)) {
+                const userAns = answers[k];
+                if (userAns) {
+                    // 用选项内容替换标记
+                    const optText = getOptionText(exam, userAns);
+                    result = result.replace(marker, optText);
+                } else {
+                    // 未作答，用正确答案内容替换（用于翻译匹配）
+                    const correctLetter = exam.answers[k];
+                    const optText = getOptionText(exam, correctLetter);
+                    result = result.replace(marker, optText);
+                }
+            }
+        });
+        return result;
     }
 
     function render() {
@@ -565,7 +565,6 @@
         const answers = userAnswers[currentPage];
         const showTrans = translationOn[currentPage];
 
-        // 计算得分
         let correctCount = 0;
         ['26','27','28','29','30'].forEach(k => {
             if (answers[k] === exam.answers[k]) correctCount++;
@@ -580,7 +579,6 @@
         articleHtml += `<button class="translate-btn ${showTrans ? 'active' : ''}" id="translateBtn">🌐 ${showTrans ? '隐藏翻译' : '全文翻译'}</button>`;
         articleHtml += `</div>`;
 
-        // 获取当前考期的翻译字典
         const transDict = (typeof translationsTianju !== 'undefined' && translationsTianju[exam.id]) || {};
 
         exam.passage.forEach((paraText, pIdx) => {
@@ -593,20 +591,18 @@
                 sentences.forEach(sent => {
                     const trimmed = sent.trim();
                     if (!trimmed) return;
-                    if (hasBlankMarker(trimmed)) {
-                        const replaced = renderBlankSlots(trimmed, exam, answers, isSubmitted, activeBlank);
-                        const zh = transDict[trimmed] || '';
-                        sentencesHtml += `<div class="sentence-block">`;
-                        sentencesHtml += `<div class="sentence-line">${replaced}</div>`;
-                        if (zh) sentencesHtml += `<div class="trans-text">${zh}</div>`;
-                        sentencesHtml += `</div>`;
-                    } else {
-                        const zh = transDict[trimmed] || '';
-                        sentencesHtml += `<div class="sentence-block">`;
-                        sentencesHtml += `<div class="sentence-line">${trimmed}</div>`;
-                        if (zh) sentencesHtml += `<div class="trans-text">${zh}</div>`;
-                        sentencesHtml += `</div>`;
-                    }
+
+                    // 关键：用选项内容替换标记后，再去翻译字典里查找
+                    const filledText = replaceMarkersWithOptionText(trimmed, exam, answers);
+                    // 渲染带空格槽的 HTML（保留可点击的槽）
+                    const replacedHtml = renderBlankSlots(trimmed, exam, answers, isSubmitted, activeBlank);
+                    // 尝试用"填充后的完整句子"查询翻译
+                    const zh = transDict[filledText] || transDict[trimmed] || '';
+
+                    sentencesHtml += `<div class="sentence-block">`;
+                    sentencesHtml += `<div class="sentence-line">${replacedHtml}</div>`;
+                    if (zh) sentencesHtml += `<div class="trans-text">${zh}</div>`;
+                    sentencesHtml += `</div>`;
                 });
                 articleHtml += `<div class="para-block ${colorClass}">${sentencesHtml}</div>`;
             } else {
@@ -671,9 +667,8 @@
             submitAreaHtml += `</div>`;
         }
 
-        // ========== 整体组装 ==========
         const html = `
-            <h1>📘填句补文</h1>
+            <h1>📘 英语二 · 填句补文</h1>
             <div class="subhead">
                 <span id="examInfo">${exam.session}真题</span>
             </div>
@@ -701,7 +696,6 @@
 
         app.innerHTML = html;
 
-        // 若已提交，填充详解
         if (isSubmitted) {
             ['26','27','28','29','30'].forEach(k => {
                 const explainDiv = document.getElementById(`explain-${k}`);
@@ -732,14 +726,12 @@
         bindEvents();
     }
 
-    // ========== 选中空格 ==========
     window.selectBlank = function(blankId) {
         if (submitted[currentPage]) return;
         activeBlank = blankId;
         render();
     };
 
-    // ========== 选中选项（填入当前空或直接选择） ==========
     window.pickOption = function(letter) {
         if (submitted[currentPage]) return;
         if (!activeBlank) {
@@ -755,7 +747,6 @@
         render();
     };
 
-    // ========== 从右侧试题直接选择 ==========
     window.selectOption = function(el, blankId, letter) {
         if (submitted[currentPage]) return;
         const answers = userAnswers[currentPage];
@@ -766,11 +757,7 @@
         render();
     };
 
-    // ========== 事件绑定 ==========
     function bindEvents() {
-        const exam = tianjuExams[currentPage];
-
-        // 翻译切换
         const translateBtn = document.getElementById('translateBtn');
         if (translateBtn) {
             translateBtn.addEventListener('click', () => {
@@ -779,7 +766,6 @@
             });
         }
 
-        // 提交
         const submitBtn = document.getElementById('submitBtn');
         if (submitBtn) {
             submitBtn.addEventListener('click', () => {
@@ -795,7 +781,6 @@
             });
         }
 
-        // 重新作答
         const resetBtn = document.getElementById('resetBtn');
         if (resetBtn) {
             resetBtn.addEventListener('click', () => {
@@ -807,7 +792,6 @@
             });
         }
 
-        // 分页
         const prevBtn = document.getElementById('prevBtn');
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
@@ -838,7 +822,6 @@
         }
     }
 
-    // ========== 分页跳转 ==========
     function goToPage(page) {
         if (page < 0 || page >= tianjuExams.length) return;
         currentPage = page;
@@ -847,7 +830,6 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // ========== 初始化 ==========
     function init() {
         if (typeof tianjuExams === 'undefined' || !Array.isArray(tianjuExams)) {
             app.innerHTML = '<div class="loading">❌ 题库数据加载失败，请检查 data-tianju.js</div>';
